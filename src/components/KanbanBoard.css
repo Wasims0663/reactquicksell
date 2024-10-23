@@ -1,0 +1,127 @@
+/* Board Layout */
+.kanban-board {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.kanban-group {
+    background-color: #f4f6f8;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px; /* Flex property for responsive design */
+    margin-bottom: 20px; /* Adds space below each group */
+}
+
+.kanban-group h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+
+/* Card Styles */
+.kanban-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ticket-id {
+    font-weight: bold;
+    color: #555;
+}
+
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Define styles for each priority level */
+.priority-icon {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 4px; /* Add padding for visual separation */
+    border-radius: 4px;
+    color: white; /* Default text color for all priority labels */
+}
+
+/* Specific styles for priority labels */
+.priority-urgent {
+    background-color: #ff4d4d; /* Red for urgent */
+}
+
+.priority-high {
+    background-color: #ffcc00; /* Yellow for high */
+}
+
+.priority-medium {
+    background-color: #ffc107; /* Orange for medium */
+}
+
+.priority-low {
+    background-color: #28a745; /* Green for low */
+}
+
+.priority-no-priority {
+    background-color: #6c757d; /* Gray for no priority */
+}
+
+.feature-tag {
+    background-color: #e4e4e4;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.feature-tag span {
+    color: #555;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .kanban-board {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .kanban-group {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px; /* Spacing between groups */
+    }
+}

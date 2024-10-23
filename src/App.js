@@ -20,6 +20,54 @@ function App() {
       userAvatar: 'https://example.com/avatar2.png',
       assigned_user: 'User 2'
     },
+    {
+      id: 'CAM-13',
+      title: 'Bug Fix for Authentication Module',
+      status: 'Done',
+      priority: 4,
+      userAvatar: 'https://example.com/avatar3.png',
+      assigned_user: 'User 3'
+    },
+    {
+      id: 'CAM-14',
+      title: 'UI Improvement for Dashboard',
+      status: 'To Do',
+      priority: 1,
+      userAvatar: 'https://example.com/avatar4.png',
+      assigned_user: 'User 4'
+    },
+    {
+      id: 'CAM-15',
+      title: 'Database Migration Plan',
+      status: 'In Progress',
+      priority: 3,
+      userAvatar: 'https://example.com/avatar5.png',
+      assigned_user: 'User 5'
+    },
+    {
+      id: 'CAM-16',
+      title: 'API Documentation Update',
+      status: 'To Do',
+      priority: 2,
+      userAvatar: 'https://example.com/avatar6.png',
+      assigned_user: 'User 6'
+    },
+    {
+      id: 'CAM-17',
+      title: 'Performance Optimization for Reports',
+      status: 'Done',
+      priority: 4,
+      userAvatar: 'https://example.com/avatar7.png',
+      assigned_user: 'User 7'
+    },
+    {
+      id: 'CAM-18',
+      title: 'Implement CI/CD Pipeline',
+      status: 'In Progress',
+      priority: 2,
+      userAvatar: 'https://example.com/avatar8.png',
+      assigned_user: 'User 8'
+    },
   ]);
 
   const [groupBy, setGroupBy] = useState('status'); // Default group by status
